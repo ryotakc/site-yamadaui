@@ -1,7 +1,7 @@
 import React from "react"
 import { Button } from "@yamada-ui/react"
 import Link from "next/link"
-import StepperDemo from "./components/stepper"
+// import StepperDemo from "./components/stepper"
 
 export default function Demo(){
   return (
