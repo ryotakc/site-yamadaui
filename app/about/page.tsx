@@ -1,5 +1,5 @@
 import React from "react";
-import CarouselDemo from "./components/carousel";
+//import CarouselDemo from "./components/carousel";
 import type { Metadata } from "next";
 import { AlphaSlider } from "@yamada-ui/react"
 
