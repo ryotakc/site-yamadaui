@@ -1,8 +1,9 @@
 import React from "react";
-//import CarouselDemo from "./components/carousel";
+import CarouselDemo from "./components/carousel";
 import type { Metadata } from "next";
 import { AlphaSlider } from "@yamada-ui/react"
 import { Calendar } from "@yamada-ui/calendar"
+import StepperDemo from "../components/stepper";
 
 export const metadata: Metadata = {
     title: 'About Services',
@@ -14,6 +15,7 @@ export default function About() {
         <div className="container mx-auto space-y-5">
             <h1 className="font-bold text-2xl">About Page</h1>
             <AlphaSlider />
+            <CarouselDemo/>
             <Calendar />
         </div>
     )

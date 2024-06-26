@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ColorModeScript, defaultConfig} from "@yamada-ui/react"
+import Sns from "@/components/sns";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,7 +40,7 @@ export default function RootLayout({
                 <img src="/logo.png" alt="Icon" className="size-10" />
               </Link>
             </h1>
-            <ul className="flex gap-1 lg:gap-3">
+            <ul className="flex gap-1">
               {navItems.map((item) => (
                 <li key={item.label}>
                   <Button colorScheme="sky" variant="ghost" size="sm">
@@ -55,6 +56,11 @@ export default function RootLayout({
           <main className="flex-grow container mx-auto px-4">
             {children}
           </main>
+
+          <footer className="container mx-auto h-16 flex items-center justify-between border-t">
+            <p className="text-sm">&copy;2024 leo</p>
+            <Sns />
+          </footer>
         </UIProvider>        
       </body>
     </html>

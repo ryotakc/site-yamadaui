@@ -1,6 +1,7 @@
 import React from "react"
 import { Button } from "@yamada-ui/react"
 import Link from "next/link"
+import StepperDemo from "./components/stepper"
 
 export default function Demo(){
   return (
@@ -14,12 +15,11 @@ export default function Demo(){
               <Button as="a" href="https://github.com/" target="_blank" rel="noopener noreferrer">
                 GitHub
               </Button>
-              <Button>
-                <Link href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <Button as="a" href="https://github.com/" target="_blank" rel="noopener noreferrer">
                 My CV
-                </Link>
               </Button>
           </div>
+          {/* <StepperDemo /> */}
         </div>
     </div>
   )

@@ -1,6 +1,10 @@
+import Sns from "@/components/sns";
+
 
 export default function Contact(){
     return (
-        <div>Contact</div>
+        <div>
+            <Sns/>
+        </div>
     )
 }
