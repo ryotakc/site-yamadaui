@@ -7,6 +7,7 @@
 //     CarouselControlPrev,
 //     CarouselIndicators,
 // } from "@yamada-ui/carousel"
+// import Image from "next/image";
 
 
 
@@ -15,16 +16,16 @@
 //         <div className="container mx-auto">
 //             <Carousel autoplay delay={1000}>
 //                 <CarouselSlide as={Center} bg="primary">
-//                     <img src="/photograph/pic1.jpg" alt="" />
+//                     <Image src="/photograph/pic1.jpg" alt="" layout="fill" objectFit="contain"/>
 //                 </CarouselSlide>
 //                 <CarouselSlide as={Center} bg="secondary">
-//                     <img src="/photograph/pic2.jpg" alt="" />
+//                     <Image src="/photograph/pic2.jpg" alt=""layout="fill" objectFit="contain"/>
 //                 </CarouselSlide>
 //                 <CarouselSlide as={Center} bg="warning">
-//                     <img src="/photograph/pic3.jpg" alt="" />
+//                     <Image src="/photograph/pic3.jpg" alt=""layout="fill" objectFit="contain"/>
 //                 </CarouselSlide>
 //                 <CarouselSlide as={Center} bg="danger">
-//                     <img src="/photograph/pic4.jpg" alt="" />
+//                     <Image src="/photograph/pic4.jpg" alt=""layout="fill" objectFit="contain"/>
 //                 </CarouselSlide>
 //                 <CarouselControlPrev />
 //                 <CarouselControlNext />

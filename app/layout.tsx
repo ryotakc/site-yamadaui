@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ColorModeScript, defaultConfig} from "@yamada-ui/react"
 import Sns from "@/components/sns";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,8 +38,15 @@ export default function RootLayout({
           <header className="container mx-auto h-16 flex items-center border-b justify-between px-4">
             <h1 className="font-bold text-2xl">
               <Link href="/">
-                <img src="/logo.png" alt="Icon" className="size-10" />
-              </Link>
+                <div className="relative w-10 h-10 md:w-16 md:h-16">
+                    <Image
+                      src="/logo.png"
+                      alt="Icon"
+                      layout="fill"
+                      objectFit="contain"
+                    />
+                  </div>
+                </Link>
             </h1>
             <ul className="flex gap-1">
               {navItems.map((item) => (
